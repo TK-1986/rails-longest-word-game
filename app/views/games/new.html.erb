@@ -1,0 +1,9 @@
+<h1 class = "title">New Game</h1>
+
+<%= @letters.each do |letter| %>
+  <%= p letter %>
+<% end %>
+<%= form_tag(score_path, method: :post) do %>
+  <%= text_field_tag(:word) %>
+  <%= submit_tag("Submit") %>
+<% end %>

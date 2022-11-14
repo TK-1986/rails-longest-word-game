@@ -1,0 +1,18 @@
+# we have to code this file to calculate score and display it in the view
+#like this :
+ <h1 class = "title">Your score is <%= @result[:score] %></h1>
+ <if test = @result[:message] == "well done">
+   <p class = "well-done"> <%= @result[:message] %></p>
+  </if> <span class = "not-in-grid"> <%= @result[:message] %></span>
+  <else>
+    <p class = "not-in-grid"> <%= @result[:message] %></p>
+  </else>
+  </if>
+  <p class = "time">Time : <%= @result[:time] %></p>
+  <p class = "translation">Translation : <%= @result[:translation] %></p>
+  <p class = "grid">Grid : <%= @result[:grid] %></p>
+  <p class = "attempt">Attempt : <%= @result[:attempt] %></p>
+  <p class = "score">Score : <%= @result[:score] %></p>
+  <p class = "average">Average : <%= @result[:average] %></p>
+  <p class = "message">Message : <%= @result[:message] %></p>
+ end
